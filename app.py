@@ -19,7 +19,7 @@ def handleRecord():
     football = footballTeam()
     mysqlController = dbConnection()
 
-    if request.form['action'] == 'delete':
+    if request.form['action'] == 'save':
         football.clave = request.form['clave']
         football.nombre =request.form['nombre']
         football.eslogan= request.form['eslogan']
